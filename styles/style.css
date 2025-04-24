@@ -1,0 +1,183 @@
+
+*{
+    background-color: rgb(235, 231, 231);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.mifooter{
+    border-top: 6px double black;
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;    
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background-color:   rgba(7, 7, 7, 0.021);
+}
+
+
+  .miheader{   
+    
+    border-bottom: 1px solid black;
+    padding: 1px; 
+    padding-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .miheader i{
+    margin-left: 10px;   
+    margin-bottom: 10px; 
+    padding: 10px;
+  }
+
+ .milogo{
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(53, 53, 58);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    
+  
+    }
+
+.milogo img{
+    width: 50px;
+    height: 50px;
+    opacity: 75%;
+    border-radius: 100%;
+}
+
+.milogin{
+    margin-right: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(53, 53, 58);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;   
+}
+
+.milogin img{    
+    width: 50px;
+    height: 50px;
+    opacity: 75%;
+    border-radius: 100%;
+}
+
+  .txtmain{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  h2{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+.btnmas{
+width: 100px;
+margin-right: 100px;
+cursor: pointer;
+background-color: #1b4db1;
+}
+
+.txtmain{
+height: 300px;
+}
+
+h1{
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.txtVaijes{
+    margin-left: 30px;
+    height: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+.nosotros{
+
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height:2;
+    margin-bottom: 30px;
+    
+}
+
+.mapa{
+width: 400px;
+height: 400px;
+margin: 15px;
+align-items: center;
+}
+
+.MainAuto{
+    margin: 10px;    
+    height: 500px;
+    width: 100%;
+    
+}
+
+.MainAuto .listaAutos{
+
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.MainAuto .Combo{
+
+    width: 100px;
+    height: 25px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.MainAuto .MiEtiqueta{
+
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.TituloAuto{
+
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+}
+
+.Alquiler{
+margin-bottom: 100px;
+
+
+}
