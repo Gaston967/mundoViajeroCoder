@@ -181,3 +181,17 @@ margin-bottom: 100px;
 
 
 }
+
+.contenedorCarrusel{
+    display: flex;
+
+
+
+}
+
+
+.contenedorCards{
+
+display: flex;
+margin: 20px;
+}
