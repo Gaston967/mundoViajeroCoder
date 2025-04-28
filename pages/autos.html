@@ -6,33 +6,73 @@
     <title>Mundo viajero</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 </head>
 <body>
     
-<header class="miheader">
+    <header class="miheader">
 
-    <div class="milogo">
-        <img src="../assets/img/Logo.jpg" alt="Logo de la empresa" > 
-    </div>
-
-    <nav>
-        <a href="../index.html"><i class="fa-solid fa-house fa-2xl" style="color: #1b4db1;"></i> home</a>
-        <a href="./paquetes.html"><i class="fa-solid fa-suitcase fa-2xl" style="color: #1b4db1;"></i> Paquetes</a>
-        <a href="./vuelos.html"><i class="fa-solid fa-plane fa-2xl" style="color: #1b4db1;"></i> Vuelos</a>
-        <a href="./hoteles.html"><i class="fa-solid fa-hotel fa-2xl" style="color: #1b4db1;"></i> Hoteles</a>
-        <a href="./autos.html"><i class="fa-solid fa-car fa-2xl" style="color: #1b4db1;"></i> Autos</a>
-        <a href="./nosotros.html"><i class="fa-solid fa-earth-americas fa-2xl" style="color: #145ddb;"></i>Nosotros</a>
-    </nav>
+        <div class="itemsCabecera">
       
-    <div class="milogin">
-        <img src="../assets/img/login.jpg" alt="Logo de Login">
-    </div>
+          <div class="formasPagos">
+            <p>3 CUOTAS SIN INTERÉS</p>
+          </div>
+      
+          <div class="subitemsCabecera">   
+      
+            <!---->
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation";>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 1100px;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html"> <i class="fa-solid fa-house fa-2xl" style="color: #1b4db1;"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/paquetes.html"><i class="fa-solid fa-suitcase fa-2xl" style="color: #1b4db1;"></i>Paquetes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/vuelos.html"><i class="fa-solid fa-plane fa-2xl" style="color: #1b4db1;"></i>Vuelos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/hoteles.html"><i class="fa-solid fa-hotel fa-2xl" style="color: #1b4db1;"></i>Hoteles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/autos.html"><i class="fa-solid fa-car fa-2xl" style="color: #1b4db1;"></i>Autos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/nosotros.html"><i class="fa-solid fa-earth-americas fa-2xl" style="color: #145ddb;"></i>Nosotros</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!---->            
+            <div class="login">
+              <a class="iconoLogin" href="">
+                <img src="../assets/img/CarritoAzul.png" alt="Carrito" class="rounded-circle opacity-75" class="img-fluid" style="max-height: 50px;">             
+              </a>      
+              <a class="iconoLogin" href="">
+                <img src="../assets/img/UsuarioAzul.png" alt="Mi cuenta" class="rounded-circle opacity-75" class="img-fluid" style="max-height: 50px;">             
+              </a>
+            </div>           
+      
+          </div>
+      
+        </div>
+        
+      </header>
 
-</header>
-
-<h1 class="TituloAuto">Alquiler de autos</h1>
+<!--***************************Main*********************************************************-->
 
 <main class="MainAuto">
+
+    <h1 class="TituloAuto">Alquiler de autos</h1>
     
   <div>
         <div class="Alquiler">
@@ -64,6 +104,7 @@
 
 
 </main>
+<!--*******************************Main*********************************************************-->
 
     <footer class="mifooter">
 
@@ -83,6 +124,7 @@
         <div>       
 
     </footer>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+   
 </body>
 </html>  

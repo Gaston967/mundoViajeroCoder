@@ -1,12 +1,110 @@
 
+/*-------------------- Fromato general---------------------------------- */
+/*-------------------- Fromato general---------------------------------- */
 *{
-    background-color: rgb(235, 231, 231);
+    background-color: rgba(255, 255, 255, 0.247);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*-------------------- Fromato general Fin---------------------------------- */
+/*-------------------- Fromato general Fin---------------------------------- */
+
+
+
+/*---------------------------------Header----------------------------------- */
+/*---------------------------------Header----------------------------------- */
+.miheader{   
+    padding: 1px; 
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.itemsCabecera{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+
+.formasPagos{
+    display: grid; 
+    place-items: center; 
+    height: 22px; 
+    background:blue;  
 
 }
 
+.formasPagos p{
+    display: flex;
+    animation: mover 20s linear infinite;
+    background-color:blue;
+    color: aliceblue;
+    width: 100%;
+    height: 22px
+  }
+
+  @keyframes mover {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.subitemsCabecera{
+    display: flex;
+    flex-direction: row;  
+
+}
+       
+    .login{
+        display: flex;
+        flex-direction: row;
+        justify-content:end;
+        width: 100%;     
+    }
+    
+    .iconoLogin{
+        margin-right: 15px;
+    }
+
+/*---------------------------------Header Fin---------------------------------- */
+/*---------------------------------Header Fin---------------------------------- */
+
+
+
+/*---------------------------------Main---------------------------------------- */
+/*---------------------------------Main---------------------------------------- */
+.contenedorCards{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    }
+    
+    .detalleDestino{
+        display: flex;
+        margin-top: 80px;
+        padding: 10px;
+    }
+    
+    .detalleDestino .destino{
+        margin: 50px;
+        text-align: center;
+    
+    }
+
+/*---------------------------------Main Fin------------------------------------ */
+/*---------------------------------Main Fin------------------------------------ */
+
+
+
+/*---------------------------------Footer---------------------------------------- */
+/*---------------------------------Footer---------------------------------------- */
 .mifooter{
     border-top: 6px double black;
     color: rgb(0, 0, 0);
@@ -18,104 +116,63 @@
     display: flex;
     padding: 20px;
     background-color:   rgba(7, 7, 7, 0.021);
+
+ 
 }
+/*---------------------------------Footer fin------------------------------------ */
+/*---------------------------------Footer fin------------------------------------ */
 
 
-  .miheader{   
-    
-    border-bottom: 1px solid black;
-    padding: 1px; 
-    padding-bottom: 20px;
-    margin-top: 10px;
-    display: flex;
+
+/*-------------------------------Formato genera------------------------------------*/
+
+h1{
     margin-bottom: 20px;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
     width: 100%;
-    z-index: 1000;
-  }
-
-  .miheader i{
-    margin-left: 10px;   
-    margin-bottom: 10px; 
-    padding: 10px;
-  }
-
- .milogo{
-    margin-left: 15px;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(53, 53, 58);
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    
-  
-    }
-
-.milogo img{
-    width: 50px;
-    height: 50px;
-    opacity: 75%;
-    border-radius: 100%;
 }
 
-.milogin{
-    margin-right: 15px;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(53, 53, 58);
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;   
+.h1Index{
+
+    border-top: solid 2px black;
+
 }
 
-.milogin img{    
-    width: 50px;
-    height: 50px;
-    opacity: 75%;
-    border-radius: 100%;
-}
-
-  .txtmain{
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-  }
-
-  h2{
+h2{
     display:flex;
     justify-content: space-between;
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
-  }
-
-.btnmas{
-width: 100px;
-margin-right: 100px;
-cursor: pointer;
-background-color: #1b4db1;
 }
 
-.txtmain{
-height: 300px;
+/*-------------------------------------Formato general fin-----------------------------*/
+
+
+/*--------------------------------------Cards------------------------------------*/
+
+.agrupaBloquesCars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
 }
 
-h1{
-    margin-bottom: 20px;
-    display: block;
-    text-align: center;
+.agrupaCards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
-.txtVaijes{
-    margin-left: 30px;
-    height: 300px;
-    height: 300px;
-    margin-bottom: 20px;
-    width: 20%;
-}
+
+
+
+/*---------------------------------------Cards Fin------------------------------------*/
+
+
+
+
 
 .nosotros{
 
@@ -184,14 +241,7 @@ margin-bottom: 100px;
 
 .contenedorCarrusel{
     display: flex;
-
-
-
 }
 
 
-.contenedorCards{
 
-display: flex;
-margin: 20px;
-}
