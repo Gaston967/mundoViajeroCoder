@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    
+ <!--**************************************************************************************************************************** -->   
     <header class="miheader">
 
         <div class="itemsCabecera">
@@ -20,8 +20,7 @@
           </div>
       
           <div class="subitemsCabecera">   
-      
-            <!---->
+
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
@@ -51,8 +50,7 @@
                   </ul>
                 </div>
               </div>
-            </nav>
-            <!---->            
+            </nav>           
             <div class="login">
               <a class="iconoLogin" href="">
                 <img src="../assets/img/CarritoAzul.png" alt="Carrito" class="rounded-circle opacity-75" class="img-fluid" style="max-height: 50px;">             
@@ -68,62 +66,88 @@
         
       </header>
 
-<!--***************************Main*********************************************************-->
+<!--**************************************************************************************************************************** -->
 
 <main class="MainAuto">
 
-    <h1 class="TituloAuto">Alquiler de autos</h1>
+  <h1 class="text-center my-4 display-5 display-md-3">Alquiler de Autos</h1>
     
-  <div>
-        <div class="Alquiler">
-            <label class="MiEtiqueta" for="Pais">Pais:</label>
-            <select class = "Combo" id="Pais" name="Pais">
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Europa">Europa</option>
-            </select>
+<div Class="marcoAuto">
 
-            <label class="MiEtiqueta" for="Ciudad">Ciudad:</label>
-            <select class = "Combo" id="Ciudad" name="Ciudad">
-            <option value="Cordoba">Cordoba</option>
-            <option value="Madrid">Madrid</option>
-            <option value="Rio de Janeiro">Rio de Janeiro</option>
-            </select>
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+    <option selected>Selecccione Pais</option>
+    <option value="1">Argentina</option>
+    <option value="2">Brasil</option>
+    <option value="3">EEUU</option>
+    <option value="3">Japon</option>
+    <option value="3">China</option>
+  </select>
+  
+  <select class="form-select form-select-sm" aria-label="Small select example">
+    <option selected>Seleccione Ciudad</option>
+    <option value="1">Villa Maria</option>
+    <option value="2">Rio Janeiro</option>
+    <option value="3">Kansas</option>
+    <option value="3">Tokio</option>
+    <option value="3">Chongqing</option>
+  </select>
 
-            <label class="MiEtiqueta" for="Desde">Desde</label>
-            <input type="text">
-
-            <label class="MiEtiqueta" for="Hasta">Hasta</label>
-            <input type="text">
-            <input type="button" value="Buscar"><br>
-        </div>
-
-        <h2>Autos Disponibles:</h2>
-        <input class="listaAutos" type="text" name="" id="">
+  <form class="ingresoFecha">
+    <div class="mb-3">
+      <label for="fecha" class="form-label">Fecha de salida:</label>
+      <input type="date" class="form-control" id="fecha" name="fecha">
     </div>
+    <div class="mb-3">
+      <label for="fecha" class="form-label">Fecha de regreso:</label>
+      <input type="date" class="form-control" id="fecha" name="fecha">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
 
+  <table class="table table-bordered table-striped table-hover text-center mb-4">
+    <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Disponible</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>------/td>
+        <td>-----</td>
+        <td>-----</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 </main>
 <!--*******************************Main*********************************************************-->
-
-    <footer class="mifooter">
-
-        <div class="telefono">
-            <i class="fa-solid fa-phone fa-sm" style="color: #0a07da;"></i> ventas:  11-5555-5555 de lunes a sabados de 9:00 a 18:00
-        </div>            
-        
-    </div>
-    <i class="fa-brands fa-youtube fa-2xl" style="color: #d21414;"></i>
-    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #008f2b;"></i>
-    <i class="fa-brands fa-facebook fa-2xl" style="color: #0749bb;"></i>
-    <i class="fa-brands fa-instagram fa-2xl" style="color: #f40101;"></i>
+<footer class="container-fluid bg-light py-4 mt-5">
+  <div class="row text-center text-md-start align-items-center">
+    
+    <div class="col-12 col-md-4 mb-3 mb-md-0">
+      <i class="fa-solid fa-phone fa-sm" style="color: #0a07da;"></i>
+      <span class="ms-2">Ventas: 11-5555-5555<br> Lun a Sáb 9:00 a 18:00</span>
     </div>
 
-        <div class="derechos">
-            &copy; Todos los derechos reservados.
-        <div>       
+    
+    <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3">
+      <i class="fa-brands fa-youtube fa-2xl" style="color: #d21414;"></i>
+      <i class="fa-brands fa-whatsapp fa-2xl" style="color: #008f2b;"></i>
+      <i class="fa-brands fa-facebook fa-2xl" style="color: #0749bb;"></i>
+      <i class="fa-brands fa-instagram fa-2xl" style="color: #f40101;"></i>
+    </div>
 
-    </footer>
+    
+    <div class="col-12 col-md-4 text-md-end">
+      <small>&copy; Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
    
 </body>
