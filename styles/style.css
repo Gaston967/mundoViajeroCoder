@@ -1,216 +1,235 @@
-
-/*-------------------- Formato general---------------------------------- */
-/*-------------------- Formato general---------------------------------- */
-*{
-    background-color: rgba(255, 255, 255, 0.247);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*-------------------- Fromato general Fin---------------------------------- */
-/*-------------------- Fromato general Fin---------------------------------- */
-
-
-
-/*---------------------------------Header----------------------------------- */
-/*---------------------------------Header----------------------------------- */
-.miheader{   
-    padding: 1px; 
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    z-index: 1000;
+body {
+  background-color: rgba(255, 255, 255, 0.247) e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.itemsCabecera{
-    display: flex;
-    flex-direction: column;
-    width: 100%;  
+footer.container-fluid {
+  background-color: #f8f9fa;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
 }
-
-.formasPagos{
-    display: grid; 
-    place-items: center; 
-    height: 22px; 
-    background:blue;  
-
+footer.container-fluid .contacto i {
+  color: #0a07da;
 }
-
-.formasPagos p{
-    display: flex;
-    animation: mover 20s linear infinite;
-    background-color:blue;
-    color: aliceblue;
-    width: 100%;
-    height: 22px
+footer.container-fluid .contacto span {
+  margin-left: 0.5rem;
+}
+footer.container-fluid .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer.container-fluid .redes i {
+  font-size: 1.5rem;
+}
+footer.container-fluid .redes i.fa-youtube {
+  color: #d21414;
+}
+footer.container-fluid .redes i.fa-whatsapp {
+  color: #008f2b;
+}
+footer.container-fluid .redes i.fa-facebook {
+  color: #0749bb;
+}
+footer.container-fluid .redes i.fa-instagram {
+  color: #f40101;
+}
+footer.container-fluid .derechos {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer.container-fluid .derechos {
+    text-align: right;
   }
+}
+footer.container-fluid .derechos small {
+  font-size: 0.875rem;
+}
 
-  @keyframes mover {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+.miheader .itemsCabecera {
+  display: flex;
+  flex-direction: column;
+}
+.miheader .itemsCabecera .formasPagos p {
+  font-weight: bold;
+  text-align: center;
+}
+.miheader .itemsCabecera .subitemsCabecera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar {
+  width: 100%;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid .navbar-toggler {
+  border: none;
+  background: transparent;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid .collapse.navbar-collapse #navbarScroll ul.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid .collapse.navbar-collapse #navbarScroll ul.navbar-nav li.nav-item a.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid .collapse.navbar-collapse #navbarScroll ul.navbar-nav li.nav-item a.nav-link i {
+  font-size: 1.5rem;
+  color: #1b4db1;
+}
+.miheader .itemsCabecera .subitemsCabecera nav.navbar .container-fluid .collapse.navbar-collapse #navbarScroll ul.navbar-nav li.nav-item a.nav-link:has(i.fa-earth-americas) i {
+  color: #145ddb;
+}
+.miheader .itemsCabecera .subitemsCabecera .login {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.miheader .itemsCabecera .subitemsCabecera .login .iconoLogin img {
+  max-height: 50px;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+footer.container-fluid {
+  background-color: #f8f9fa;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 3rem;
+}
+footer.container-fluid .contacto i {
+  color: #0a07da;
+}
+footer.container-fluid .contacto span {
+  margin-left: 0.5rem;
+}
+footer.container-fluid .redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer.container-fluid .redes i {
+  font-size: 1.5rem;
+}
+footer.container-fluid .redes i.fa-youtube {
+  color: #d21414;
+}
+footer.container-fluid .redes i.fa-whatsapp {
+  color: #008f2b;
+}
+footer.container-fluid .redes i.fa-facebook {
+  color: #0749bb;
+}
+footer.container-fluid .redes i.fa-instagram {
+  color: #f40101;
+}
+footer.container-fluid .derechos {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer.container-fluid .derechos {
+    text-align: right;
   }
-
-.subitemsCabecera{
-    display: flex;
-    flex-direction: row;  
-
 }
-       
-    .login{
-        display: flex;
-        flex-direction: row;
-        justify-content:end;
-        width: 100%;     
-    }
-    
-    .iconoLogin{
-        margin-right: 15px;
-    }
-
-/*---------------------------------Header Fin---------------------------------- */
-/*---------------------------------Header Fin---------------------------------- */
-
-
-
-/*---------------------------------Main---------------------------------------- */
-/*---------------------------------Main---------------------------------------- */
-.contenedorCards{
-    display: flex;
-    margin: 20px;
-    justify-content: space-around;
-    }
-    
-    .detalleDestino{
-        display: flex;
-        margin-top: 80px;
-        padding: 10px;
-    }
-    
-    .detalleDestino .destino{
-        margin: 50px;
-        text-align: center;
-    
-    }
-
-/*---------------------------------Main Fin------------------------------------ */
-/*---------------------------------Main Fin------------------------------------ */
-
-
-
-/*---------------------------------Footer---------------------------------------- */
-/*---------------------------------Footer---------------------------------------- */
-.mifooter{
-    border-top: 6px double black;
-    color: rgb(0, 0, 0);
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px;    
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    padding: 20px;
-    background-color:   rgba(7, 7, 7, 0.021);
- 
-}
-/*---------------------------------Footer fin------------------------------------ */
-/*---------------------------------Footer fin------------------------------------ */
-
-
-
-/*-------------------------------Formato general------------------------------------*/
-
-h1{
-    margin-bottom: 20px;
-    display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: center;
-    border-top: solid black 2px;
+footer.container-fluid .derechos small {
+  font-size: 0.875rem;
 }
 
-h2{
-    display:flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
-/*-------------------------------------Formato general fin-----------------------------*/
-
-
-/*--------------------------------------Cards------------------------------------*/
-
-.agrupaBloquesCars{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
-    margin-bottom: 25px;
-    
+.destinos {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.destinos .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destinos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.destinos .card img.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+.destinos .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.destinos .card .card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.destinos .card .card-body .card-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.destinos .card .card-body .btn {
+  align-self: start;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.destinos .card .card-body .btn:hover {
+  background-color: #084298;
+  border-color: #06357a;
 }
 
-.agrupaCards{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    
+.seccion-destino {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+.seccion-destino .row {
+  align-items: center;
+}
+.seccion-destino .destino {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .seccion-destino .destino {
+    padding-right: 1rem;
   }
-  
-
-/*---------------------------------------Cards Fin------------------------------------*/
-
-
-
-
-/*---------------------------------------Nosotros------------------------------------*/
-
-.nosotros{
-
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;
-    line-height:2;
-    margin-bottom: 30px;
-    
+}
+.seccion-destino .figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.seccion-destino .figure figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+.seccion-destino:nth-of-type(even) .row {
+  flex-direction: row-reverse;
 }
 
-.mapa{
-width: 400px;
-height: 400px;
-margin: 15px;
-align-items: center;
-}
-
-/*---------------------------------------Nosotros Fin------------------------------------*/
-
-
-
-/*---------------------------------------Autos------------------------------------*/
-
-/*---------------------------------------Autos Fin------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */

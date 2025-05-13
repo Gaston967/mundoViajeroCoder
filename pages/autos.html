@@ -10,144 +10,134 @@
 
 </head>
 <body>
- <!--**************************************************************************************************************************** -->   
-    <header class="miheader">
+ 
+ <!-- HEADER -->
+  <header class="miheader">
+    <div class="itemsCabecera">
+      <div class="formasPagos">
+        <p>3 CUOTAS SIN INTERÉS</p>
+      </div>
 
-        <div class="itemsCabecera">
-      
-          <div class="formasPagos">
-            <p>3 CUOTAS SIN INTERÉS</p>
+      <div class="subitemsCabecera">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"><i class="fa-solid fa-house fa-2xl"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/paquetes.html"><i class="fa-solid fa-suitcase fa-2xl"></i> Paquetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/vuelos.html"><i class="fa-solid fa-plane fa-2xl"></i> Vuelos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/hoteles.html"><i class="fa-solid fa-hotel fa-2xl"></i> Hoteles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/autos.html"><i class="fa-solid fa-car fa-2xl"></i> Autos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html"><i class="fa-solid fa-earth-americas fa-2xl"></i> Nosotros</a>
+                </li>
+              </ul>
+            </div>
           </div>
-      
-          <div class="subitemsCabecera">   
+        </nav>
+      </div>
+    </div>
+  </header>
 
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation";>
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 1100px;">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index.html"> <i class="fa-solid fa-house fa-2xl" style="color: #1b4db1;"></i>Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/paquetes.html"><i class="fa-solid fa-suitcase fa-2xl" style="color: #1b4db1;"></i>Paquetes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/vuelos.html"><i class="fa-solid fa-plane fa-2xl" style="color: #1b4db1;"></i>Vuelos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/hoteles.html"><i class="fa-solid fa-hotel fa-2xl" style="color: #1b4db1;"></i>Hoteles</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/autos.html"><i class="fa-solid fa-car fa-2xl" style="color: #1b4db1;"></i>Autos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/nosotros.html"><i class="fa-solid fa-earth-americas fa-2xl" style="color: #145ddb;"></i>Nosotros</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>           
-            <div class="login">
-              <a class="iconoLogin" href="">
-                <img src="../assets/img/CarritoAzul.png" alt="Carrito" class="rounded-circle opacity-75" class="img-fluid" style="max-height: 50px;">             
-              </a>      
-              <a class="iconoLogin" href="">
-                <img src="../assets/img/UsuarioAzul.png" alt="Mi cuenta" class="rounded-circle opacity-75" class="img-fluid" style="max-height: 50px;">             
-              </a>
-            </div>           
-      
-          </div>
-      
+  <!-- MAIN -->
+  <main class="MainAuto">
+    <h1 class="text-center my-4 display-5 display-md-3">Alquiler de Autos</h1>
+
+    <div class="marcoAuto">
+
+      <!-- País y ciudad -->
+      <form>
+        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+          <option selected>Seleccione País</option>
+          <option value="1">Argentina</option>
+          <option value="2">Brasil</option>
+          <option value="3">EEUU</option>
+          <option value="4">Japón</option>
+          <option value="5">China</option>
+        </select>
+      </form>
+
+      <form>
+        <select class="form-select form-select-sm" aria-label="Small select example">
+          <option selected>Seleccione Ciudad</option>
+          <option value="1">Villa María</option>
+          <option value="2">Río de Janeiro</option>
+          <option value="3">Kansas</option>
+          <option value="4">Tokio</option>
+          <option value="5">Chongqing</option>
+        </select>
+      </form>
+
+      <!-- Fechas -->
+      <form class="ingresoFecha">
+        <div class="mb-3">
+          <label for="fechaSalida" class="form-label">Fecha de salida:</label>
+          <input type="date" class="form-control" id="fechaSalida" name="fecha_salida" />
         </div>
-        
-      </header>
+        <div class="mb-3">
+          <label for="fechaRegreso" class="form-label">Fecha de regreso:</label>
+          <input type="date" class="form-control" id="fechaRegreso" name="fecha_regreso" />
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
 
-<!--**************************************************************************************************************************** -->
+      <!-- Tabla -->
+      <table class="table table-bordered table-striped table-hover text-center mb-4">
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Disponible</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>---</td>
+            <td>---</td>
+            <td>---</td>
+          </tr>
+        </tbody>
+      </table>
 
-<main class="MainAuto">
-
-  <h1 class="text-center my-4 display-5 display-md-3">Alquiler de Autos</h1>
-    
-<div Class="marcoAuto">
-
-  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-    <option selected>Selecccione Pais</option>
-    <option value="1">Argentina</option>
-    <option value="2">Brasil</option>
-    <option value="3">EEUU</option>
-    <option value="3">Japon</option>
-    <option value="3">China</option>
-  </select>
-  
-  <select class="form-select form-select-sm" aria-label="Small select example">
-    <option selected>Seleccione Ciudad</option>
-    <option value="1">Villa Maria</option>
-    <option value="2">Rio Janeiro</option>
-    <option value="3">Kansas</option>
-    <option value="3">Tokio</option>
-    <option value="3">Chongqing</option>
-  </select>
-
-  <form class="ingresoFecha">
-    <div class="mb-3">
-      <label for="fecha" class="form-label">Fecha de salida:</label>
-      <input type="date" class="form-control" id="fecha" name="fecha">
     </div>
-    <div class="mb-3">
-      <label for="fecha" class="form-label">Fecha de regreso:</label>
-      <input type="date" class="form-control" id="fecha" name="fecha">
-    </div>
-  
-    <button type="submit" class="btn btn-primary">Buscar</button>
-  </form>
+  </main>
 
-  <table class="table table-bordered table-striped table-hover text-center mb-4">
-    <thead>
-      <tr>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Disponible</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>------/td>
-        <td>-----</td>
-        <td>-----</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <!-- FOOTER -->
+  <footer class="container-fluid bg-light py-4 mt-5">
+    <div class="row text-center text-md-start align-items-center">
+      <div class="col-12 col-md-4 contacto mb-3 mb-md-0">
+        <i class="fa-solid fa-phone fa-sm"></i>
+        <span class="ms-2">Ventas: 11-5555-5555 - Lun a Sáb 9:00 a 18:00</span>
+      </div>
 
-</main>
-<!--*******************************Main*********************************************************-->
-<footer class="container-fluid bg-light py-4 mt-5">
-  <div class="row text-center text-md-start align-items-center">
-    
-    <div class="col-12 col-md-4 mb-3 mb-md-0">
-      <i class="fa-solid fa-phone fa-sm" style="color: #0a07da;"></i>
-      <span class="ms-2">Ventas: 11-5555-5555<br> Lun a Sáb 9:00 a 18:00</span>
-    </div>
+      <div class="col-12 col-md-4 redes mb-3 mb-md-0">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
 
-    
-    <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3">
-      <i class="fa-brands fa-youtube fa-2xl" style="color: #d21414;"></i>
-      <i class="fa-brands fa-whatsapp fa-2xl" style="color: #008f2b;"></i>
-      <i class="fa-brands fa-facebook fa-2xl" style="color: #0749bb;"></i>
-      <i class="fa-brands fa-instagram fa-2xl" style="color: #f40101;"></i>
+      <div class="col-12 col-md-4 derechos text-md-end">
+        <small>&copy; Todos los derechos reservados.</small>
+      </div>
     </div>
+  </footer>
 
-    
-    <div class="col-12 col-md-4 text-md-end">
-      <small>&copy; Todos los derechos reservados.</small>
-    </div>
-  </div>
-</footer>
-    
+  <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
    
 </body>
